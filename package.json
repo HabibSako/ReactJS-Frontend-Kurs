@@ -1,0 +1,21 @@
+{
+  "name": "btk",
+  "version": "1.0.0",
+  "description": "For HTML5, CSS3, JS, REACTJS ",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"ISC\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "NONE"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "JS",
+    "REACTJS"
+  ],
+  "author": "HabibSako",
+  "license": "ISC"
+}

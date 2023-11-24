@@ -1,0 +1,196 @@
+/* 21-11-2023 salı dersi */
+/* bütün elemanlar için */
+* {
+    /* border-box hafıza kullanımını daha optimal kullanımı */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* rem kullanımı farklı boyuttaki cihazlar için oran sağlar */
+
+
+html {
+    font-size: 15px;
+}
+
+/* body{
+    background-color: orange;
+}  */
+header {
+    background-image: url(/utils/img/0ac6415a-2e71-4d24-bc21-6f5c21bf486e.jpg);
+    width: 100%;
+    height: 400px;
+    margin-top: 1rem;
+    /* resim sabit sayfa küçülüp büyüdüğünde resme yakınlaşıp uzaklaşıyor */
+    background-size: cover;
+    /* resimin hangi kısmına odaklanır */
+    background-position: center;
+}
+
+#parag_id {
+    color: yellow;
+    color: azure;
+    color: #789789;
+    color: #123;
+    color: rgb(0, 0, 0, 0.4);
+    /* son değer saydamlık değeri */
+    color: rgba(187, 87, 87, 0.4);
+    background-color: black;
+    /*genişliği eşit şekilde sağ ve sola ortalar*/
+
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    /* tüm kenarları tek paddingde ifade edebiliyoruz */
+    padding: 30px 20px 15px 18px;
+    /* tüm kenarlar */
+    padding: 20px;
+    /* x ve y ekseninde boşluk değerleri*/
+    padding: 10px 20px;
+    /* padding için geçerli olan kurallar margin içinde geçerli */
+    margin: 20px;
+    ;
+    text-align: justify;
+    /* paragraf başı girintisi oluşturma */
+    text-indent: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* kalın yazmak için */
+    font-weight: bolder;
+    font-style: italic;
+    /* gecikme süresi */
+    transition: 3s all;
+    /* hepsi büyük harf */
+    text-transform: uppercase;
+    /* block içerisinde yazıyı ikiye bölüyor(makale yazıları gibi) */
+    column-count: 2;
+    column-rule: 1px solid black;
+}
+
+/* hover metodu fare üzerine geldiğinde değişiklik istediğimiz yapılarda kullanılır */
+#parag_id:hover {
+    color: black;
+    background-color: #789789;
+    transition: 2s ease-in-out;
+    text-transform: uppercase;
+
+}
+
+.div_class {
+    width: 23%;
+    height: 50px;
+    background-color: #789789;
+    /* solid tek renk */
+    border: 1px solid blue;
+    display: inline-block;
+    transition: 3s all;
+}
+
+.div_class:hover {
+    cursor: pointer;
+    width: 45%;
+    /* border-radius kenarlardan ovallik sağlar */
+    border-radius: 10%;
+    transform: rotate(180deg);
+}
+
+ul {
+    /* listenin başındaki noktaları kaldırır. */
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    background-color: rgb(194, 127, 40);
+    color: azure;
+    padding: 0.3rem 0.2rem 0.2rem 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 8%;
+    font-size: 0.8rem;
+    position: fixed;
+    top: 0;
+
+}
+
+ul li:hover {
+    background-color: white;
+    color: blueviolet;
+    transition: 2s all;
+    cursor: pointer;
+    transition: 2s all;
+}
+
+#back_top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: aquamarine;
+    color: white;
+    padding: 0.1rem;
+    opacity: 0.8;
+    border-radius: 10%;
+
+}
+
+#back_top:hover {
+    opacity: 0.5;
+}
+
+img {
+    /* görsel genişliğe göre boyut değiştiriyor */
+    max-width: 100%;
+    height: auto;
+}
+
+.div_float {
+    background-color: rgb(75, 51, 77);
+    color: white;
+    width: 23%;
+    display: inline-block;
+    min-height: 50px;
+    padding: 1rem;
+    /* sıralamanın sağdan mı soldan mı olacağı */
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 2rem;
+    /* gölgelendirme */
+    box-shadow: 1px 1px 5px 0.8px rgba(187, 87, 87, 0.9);
+}
+
+.div_float:hover {
+    box-shadow: 1px 1px 5px 0.8px rgba(187, 87, 87, 0.4);
+}
+
+/* responsive design (ekran boyutuna göre tasarım)*/
+.div_class_responsive {
+    width: 100%;
+    height: 50px;
+    border: 1px solid blue;
+    background-color: red !important;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+/* 468<=RS<=767 */
+@media (min-width:767px) and (max-width:980px) {
+    .div_class_responsive {
+        width: 49%;
+    }
+}
+
+/* 981<=RS<=1199 */
+@media (min-width:981px) and (max-width:1199px) {
+    .div_class_responsive {
+        width: 32%;
+    }
+}
+/* RS<=1200 */
+@media (min-width:1200px)  {
+    .div_class_responsive {
+        width: 24%;
+    }
+}
