@@ -1,0 +1,17 @@
+body{
+    background-image: url(/utils/img/0ac6415a-2e71-4d24-bc21-6f5c21bf486e.jpg);
+    background-size: cover;
+}
+input{
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 1rem;
+    padding-right: 6rem;
+    
+}
+td{
+    padding-bottom: 8px;
+}
+th{
+    padding-bottom: 2rem;
+    
+}
