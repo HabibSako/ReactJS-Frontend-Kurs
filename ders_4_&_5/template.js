@@ -158,26 +158,26 @@
 function returnsuzParametresiz() {
     document.writeln("1 - returnsuz paremetresiz <br>");
 }
-returnsuzParametresiz();
+//returnsuzParametresiz();
 
 
 function returnsuzParametreli(uname) {
     document.writeln("2 - returnsuz paremetresli " + uname + "<br>");
 }
-returnsuzParametreli("Habib Şako");
+//returnsuzParametreli("Habib Şako");
 
 
-function returnluParametresiz() {
-    return "3 - returnlu paremetresiz ";
-}
-const data4 = returnluParametresiz();
-document.writeln(data4 + "<br>");
+// function returnluParametresiz() {
+//     return "3 - returnlu paremetresiz ";
+// }
+// const data4 = returnluParametresiz();
+// document.writeln(data4 + "<br>");
 
-function returnluParametreli(uname) {
-    return "4 - returnsuz paremetresli " + uname;
-}
-const data5 = returnluParametreli("Habib Şako");
-document.writeln(data5 + "<br>");
+// function returnluParametreli(uname) {
+//     return "4 - returnsuz paremetresli " + uname;
+// }
+// const data5 = returnluParametreli("Habib Şako");
+// document.writeln(data5 + "<br>");
 
 ////////////////////////////////////////////////////
 // ÖDEV -2 
@@ -197,29 +197,29 @@ document.writeln(data5 + "<br>");
 //////////////////////////
 //Immedi Function(IF)
 //sadece en üstte çalışır.
-(
-    function () {
-        document.writeln("immedia function <br/>");
-    }
-)()
+// (
+//     function () {
+//         document.writeln("immedia function <br/>");
+//     }
+// )()
 
 //normal function
 function normalFunction() {
     document.writeln("normal function <br/>");
 }
-normalFunction();
+//normalFunction();
 
 //anonymous Function
 const anonymousFunction = function () {
     document.writeln("anonymous function <br/>");
 }
-anonymousFunction();
+//anonymousFunction();
 
 //? Arrow function en çok kullanılanlardan 
 const arrowFunction = () => {
     document.writeln("arrow function <br/>");
 }
-arrowFunction();
+//arrowFunction();
 /******************************************** */
 
 //* conditional, ternary, switch-case
@@ -233,61 +233,228 @@ const conditional = () => {
         document.writeln("negatifdir.<br>");
     }
 }
-conditional();
+//conditional();
 //* ternary kullanımı
 
-const conditional2 = () => {
-    const number2 = -2;
-    const ternary = (number2 > 0) ? "pozitifdir <br>" : "negatifdir <br>";
-    document.writeln(ternary);
-}
-conditional2();
+// const conditional2 = () => {
+//     const number2 = -2;
+//     const ternary = (number2 > 0) ? "pozitifdir <br>" : "negatifdir <br>";
+//     document.writeln(ternary);
+// }
+// conditional2();
 
-//* else if
-const conditional3 = () => {
-    let number = 7;
-    if (number == 1) {
-        document.writeln("1 <br>");
-    }
-    else if (number === 2) {
-        document.writeln("2 <br>");
-    }
-    else if (number === 3) {
-        document.writeln("3 <br>");
-    }
-    else if (number === 4) {
-        document.writeln("4 <br>");
-    }
-    else if (number === 5) {
-        document.writeln("5 <br>");
-    }
-    else {
-        document.writeln("1<=SAYI<=5 dışındadır. <br>");
-    }
-}
-conditional3();
+// //* else if
+// const conditional3 = () => {
+//     let number = 7;
+//     if (number == 1) {
+//         document.writeln("1 <br>");
+//     }
+//     else if (number === 2) {
+//         document.writeln("2 <br>");
+//     }
+//     else if (number === 3) {
+//         document.writeln("3 <br>");
+//     }
+//     else if (number === 4) {
+//         document.writeln("4 <br>");
+//     }
+//     else if (number === 5) {
+//         document.writeln("5 <br>");
+//     }
+//     else {
+//         document.writeln("1<=SAYI<=5 dışındadır. <br>");
+//     }
+// }
+// conditional3();
 
-const conditional4 = () => {
-    let number = 2
-    switch (number) {
-        case 1:
-            document.writeln("1 <br>");
-            break;
-        case 2:
-            document.writeln("2 <br>");
-            break;
-        case 3:
-            document.writeln("3 <br>");
-            break;
-        default:
-            document.writeln("1<=SAYI<=5 dışındadır. <br>");
-            break;
-    }
-}
-conditional4();
+// const conditional4 = () => {
+//     let number = 2
+//     switch (number) {
+//         case 1:
+//             document.writeln("1 <br>");
+//             break;
+//         case 2:
+//             document.writeln("2 <br>");
+//             break;
+//         case 3:
+//             document.writeln("3 <br>");
+//             break;
+//         default:
+//             document.writeln("1<=SAYI<=5 dışındadır. <br>");
+//             break;
+//     }
+// }
+// conditional4();
 //* break : döngünün durması için kullanılır.
 //* return : function çalışmaması için kullanılır.
 //* continue : şart sağlandığı müddetçe çalışması için kullanılır.
 
 //* looplar
 // for, while, do-while
+
+//exception Handling - hata yakalama
+const exceptionHandlingData = () => {
+    console.log("ilk satır");
+    try {
+        alertx("alert data");
+    } catch (err) {
+        console.error("Hata !!! " + err);
+    } finally {
+        console.log("port.close()");
+    }
+    console.log("son satır");
+}
+//exceptionHandlingData();
+
+const setTimeOutSetInterval = () => {
+    //*setTimeout
+    setTimeout(() => {
+        console.log("set time out 2sn")
+    }, 2000);//2saniye
+    //* setinterval sonsuza kadar devam ediyor
+    setInterval(() => {
+        console.log("setinterval ");
+    }, 2000);
+}
+//setTimeOutSetInterval();
+
+/**************************************** */
+
+/***********DİZİLER********************** */
+const arrayFunction = () => {
+    let arr = ["Malatya", "Elazığ", 44, 23, true, false];
+    console.log(arr);
+    document.writeln();
+}
+//arrayFunction();
+
+const arrayFunction2 = () => {
+    let arr = [5,6,8,2,4,5,9,1];
+    arr[4] =6;
+    console.log(arr);
+    console.log(arr[0]);
+    console.log(arr[4]);
+    document.writeln();
+}
+//arrayFunction2();
+
+//*array Data set
+const dataSet = () =>{
+    let arr = [5,6,8,2,4,11,9,1];
+    return arr;
+}
+//! **************************** önemli kısım ****************************
+const arrayFunction3 = () => {
+    let arr = dataSet();
+    //console.log(arr);
+
+    //*iterative
+    for (let i = 0; i < arr.length; i++) {
+        document.writeln(arr[i]);
+    }
+    document.writeln("<br>");
+
+    //*in temp index değeri oluyor
+    for (let temp in arr) {
+        document.writeln(temp + " => " + arr[temp] + " <br/>");
+    }
+    //*of 
+    for (let temp of arr) {
+        document.writeln(temp + " <br/>");
+    }
+    // FOREACH
+    // forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
+    arr.forEach((value, index, array) =>{
+        document.writeln(index + "=>" + value + "<br>");
+    })
+}
+//arrayFunction3();
+
+//dizilere başa ekleme/silme sona ekleme/silme 
+const arrayFunction4 = () => {
+    let arr= dataSet();
+    //sona ekle
+    arr.push(44);
+    //başa ekle
+    arr.unshift(23);
+    //sondan sil
+    arr.pop();
+    //baştan sil
+    arr.shift();
+    //sıralama küçükten büyüğe
+    arr.sort();
+    console.log(arr);
+    //diziyi terse çevirme
+    arr.reverse();
+    console.log(arr);
+    //büyükten küçüğe
+    arr.sort().reverse();
+    console.log(arr);
+    //to String
+    console.log(arr.toString());
+    console.log(arr.toString().substring(0,4));
+    //to join elemanların arasına ekleme yapıyor
+    console.log(arr.join(" "))
+}
+//arrayFunction4();
+
+const arrayFunction5 = () => {
+    let arr = dataSet();
+    //console.log(arr);
+
+    // FOREACH
+    // forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
+    arr.forEach((value, index, array) =>{
+       console.log(index + "=>" + value );
+    });
+    console.log("filter") //filtreleme işlemi yapar
+    arr.filter((value, index, array) =>{
+       return value %2==0;
+     }).forEach((value, index, array) =>{//yazdırmak için
+        console.log(index + "=>" + value );
+     });
+     //map
+     console.log("map");
+     arr.map((value, index, array) =>{
+        return value= value+10;
+      }).forEach((value, index, array) =>{//yazdırmak için
+         console.log(index + "=>" + value );
+      });
+}
+//arrayFunction5();
+
+//! *********************** OBJECT **********************
+
+const objectData = () => {
+    let person = {
+        "name" : "Habib",
+        "surname" : "Şako",
+        "number" : "02200201011",
+        isLogin : true,
+        languages : ["java", "c++", "python", "js"],
+        addYear : function (){
+            console.log("object in Function");
+        },
+        javascript : {
+            "name" : "JavaScript",
+            "version" : "12",
+           "date" : "1995",
+
+        }
+    };
+    console.log(person.name);
+    //farklı kullanım
+    console.log(person["name"]);
+    console.log(person.surname);
+    console.log(person.surname.toUpperCase().substring(0,3).concat("***"));
+    //objenin içinden obje çağırma
+    console.log(person.javascript.version);
+    //objenin içinden fonksiyon çağırma
+    console.log(person.addYear());
+    
+    person.password="1234"
+    console.log(person.password);
+    console.log(person.otherProperites);
+
+}
+objectData();

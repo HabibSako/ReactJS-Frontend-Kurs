@@ -132,3 +132,4 @@ const ornek3 = function () {
     document.writeln(sayi);
 }
 ornek3();
+
